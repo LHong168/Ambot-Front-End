@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{225015CC-CA3F-4924-BDDF-D187B87C958A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ambot_Json</RootNamespace>
+    <AssemblyName>Ambot-Json</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomButton\ButtonRadiusRight.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomButton\ButtonFullRadius.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomButton\ButtonRadiusLeft.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageLoader.cs" />
+    <Compile Include="JsonObject.cs" />
+    <Compile Include="PageLayout10.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout10.Designer.cs">
+      <DependentUpon>PageLayout10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout11.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout11.Designer.cs">
+      <DependentUpon>PageLayout11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout12.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout12.Designer.cs">
+      <DependentUpon>PageLayout12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout13.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout13.Designer.cs">
+      <DependentUpon>PageLayout13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout14.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout14.Designer.cs">
+      <DependentUpon>PageLayout14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout5.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout5.Designer.cs">
+      <DependentUpon>PageLayout5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout1.Designer.cs">
+      <DependentUpon>PageLayout1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout2.Designer.cs">
+      <DependentUpon>PageLayout2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout3.Designer.cs">
+      <DependentUpon>PageLayout3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout4.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout4.Designer.cs">
+      <DependentUpon>PageLayout4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout6.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout6.Designer.cs">
+      <DependentUpon>PageLayout6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout8.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout8.Designer.cs">
+      <DependentUpon>PageLayout8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageLayout9.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageLayout9.Designer.cs">
+      <DependentUpon>PageLayout9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout10.resx">
+      <DependentUpon>PageLayout10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout11.resx">
+      <DependentUpon>PageLayout11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout12.resx">
+      <DependentUpon>PageLayout12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout13.resx">
+      <DependentUpon>PageLayout13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout14.resx">
+      <DependentUpon>PageLayout14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout5.resx">
+      <DependentUpon>PageLayout5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout1.resx">
+      <DependentUpon>PageLayout1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout2.resx">
+      <DependentUpon>PageLayout2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout3.resx">
+      <DependentUpon>PageLayout3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout4.resx">
+      <DependentUpon>PageLayout4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout6.resx">
+      <DependentUpon>PageLayout6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout8.resx">
+      <DependentUpon>PageLayout8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageLayout9.resx">
+      <DependentUpon>PageLayout9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="bin\Debug\Ambot.json" />
+    <None Include="bin\Debug\Ambot-Json.exe.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Ambot-Json.exe" />
+    <Content Include="bin\Debug\Ambot-Json.pdb" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="bin\Debug\Resources\aboutUs_1.png" />
+    <Content Include="bin\Debug\Resources\aboutUs_2.png" />
+    <Content Include="bin\Debug\Resources\Arizona_Logo.png" />
+    <Content Include="bin\Debug\Resources\ATC.png" />
+    <Content Include="bin\Debug\Resources\aupp_center.png" />
+    <Content Include="bin\Debug\Resources\AUPP_Logo.png" />
+    <Content Include="bin\Debug\Resources\bachelor_admission.png" />
+    <Content Include="bin\Debug\Resources\banner\business_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\enrollment_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\global_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\international_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\IT_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\law&amp;global_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\law_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\legal_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\majors_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\partnership_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\scholarship_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\study_business_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\study_law_banner.png" />
+    <Content Include="bin\Debug\Resources\banner\transfer_banner.png" />
+    <Content Include="bin\Debug\Resources\canteen.png" />
+    <Content Include="bin\Debug\Resources\canteenPic.png" />
+    <Content Include="bin\Debug\Resources\CLUB.png" />
+    <Content Include="bin\Debug\Resources\clubs.png" />
+    <Content Include="bin\Debug\Resources\csi.png" />
+    <Content Include="bin\Debug\Resources\csiPic.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\bandaideagle.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\book.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\brokenlaptopeagle.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\chefeagle.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\flippedeagle.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\graduationeagle.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\guitareagle.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\laptopeagle.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\megaphoneeagle.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\normaleagle.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\pingpongeagle.png" />
+    <Content Include="bin\Debug\Resources\eaglesimages\suiteagle.png" />
+    <Content Include="bin\Debug\Resources\finance.png" />
+    <Content Include="bin\Debug\Resources\financePic.png" />
+    <Content Include="bin\Debug\Resources\Fort_Hays_Logo.png" />
+    <Content Include="bin\Debug\Resources\full.png" />
+    <Content Include="bin\Debug\Resources\infirmary.png" />
+    <Content Include="bin\Debug\Resources\infirmaryPic.png" />
+    <Content Include="bin\Debug\Resources\it_support.png" />
+    <Content Include="bin\Debug\Resources\IT_SUPPORTPic.png" />
+    <Content Include="bin\Debug\Resources\library.png" />
+    <Content Include="bin\Debug\Resources\libraryPic.png" />
+    <Content Include="bin\Debug\Resources\majors.png" />
+    <Content Include="bin\Debug\Resources\master_admission.png" />
+    <Content Include="bin\Debug\Resources\merit.png" />
+    <Content Include="bin\Debug\Resources\overview.png" />
+    <Content Include="bin\Debug\Resources\qr\qr-codeBachelorAdmission.png" />
+    <Content Include="bin\Debug\Resources\qr\qr-codeEvent.png" />
+    <Content Include="bin\Debug\Resources\qr\qr-codeInternationalStudent.png" />
+    <Content Include="bin\Debug\Resources\qr\qr-codeMaster.png" />
+    <Content Include="bin\Debug\Resources\qr\qr-codeMerit+Full Scholarship.png" />
+    <Content Include="bin\Debug\Resources\qr\qr-codeSingle+Dual.png" />
+    <Content Include="bin\Debug\Resources\vision.png" />
+    <None Include="bin\Debug\Resources\ico\arrow.png" />
+    <None Include="bin\Debug\Resources\ico\home_icon.png" />
+    <None Include="bin\Debug\Resources\speech_bubble2.png" />
+    <None Include="bin\Debug\Resources\speech bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
